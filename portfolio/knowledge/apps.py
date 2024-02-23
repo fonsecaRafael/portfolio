@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class BaseConfig(AppConfig):
+class KnowledgeConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'portfolio.base'
+    name = 'portfolio.knowledge'

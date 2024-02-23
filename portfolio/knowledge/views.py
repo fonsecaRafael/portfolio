@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 @require_http_methods(["GET"])
 def home(request):
-    return render(request, 'base/home.html')
+    return render(request, 'knowledge/home.html')

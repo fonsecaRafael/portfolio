@@ -1,0 +1,38 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block description %}Rafael's Portfolio Home page{% endblock description %}
+{% block title %}Home{% endblock title %}
+{% block head-imports %}
+    <link rel="stylesheet" href="{% static 'css/custom-home.css' %}">
+{% endblock head-imports %}
+
+
+{% block body %}
+<div class="container-fluid pt-4">
+<div class="row mt-4">
+    <div class="col-1 mt-4"></div>
+    <div class="col-5 mt-4 pt-4">
+        <div class="container">
+        <h1>Olá!</h1>
+        <span class="text fixed-text">Eu sou</span>
+        <span class="text changing-text"> o Rafael</span>
+        <p><br>Bem vindo/a ao meu portfólio!</p>
+        <p>Clicando em projetos você verá um menu de projetos.<br>
+        Cada projeto pode ser detalhado, isso irá mostrar quais habilidades eles demonstram.<br>E por fim, você poderá
+        ver o código ou resultados do projeto.</p>
+        <p>Clicando em Conhecimentos você acessará uma wiki sobre conhecimentos que eu tenho e julgo importantes sobre
+        linguagem de programação python, ciência da computação, desenvolvimento web, dados, entre outros.</p>
+        <p>Este site é feito com Python, Django e Bootstrap</p>
+        </div>
+    </div>
+    <div class="col-6 my-4">
+        <img src="{% static 'img/foto.jpeg' %}" alt="Picture of me" class="max-width:20% rounded-circle mx-auto d-block">
+    </div>
+</div>
+</div>
+{% endblock body %}
+
+{% block js-imports %}
+<script src="{% static 'js/custom-home.js/'%}"></script>
+{% endblock js-imports%}
