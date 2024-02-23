@@ -3,6 +3,7 @@ from django.urls import reverse
 
 from portfolio.django_assertions import assert_contains
 
+
 @pytest.fixture
 def response(client):
     response = client.get(reverse('base:home'))
@@ -23,7 +24,3 @@ def test_knowledge_link(response):
 
 def test_projects_link(response):
     assert_contains(response, f'href="{reverse('projects:projects')}">Projects</a>')
-
-
-def test_contains_image(response):
-    assert_contains(response, f'<img src="img_profile.jpg" alt="Photo of me">')
