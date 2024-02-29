@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-TESTE PROJECTS
-</body>
-</html>
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block description %}Rafael's Projects page{% endblock description %}
+{% block title %}Projects{% endblock title %}
+{% block head-imports %}
+    <link rel="stylesheet" href="{% static 'css/custom-home.css' %}">
+{% endblock head-imports %}
+
+
+{% block body %}
+    <h1>Projects in development</h1>
+{% endblock body %}
