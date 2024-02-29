@@ -1,11 +1,13 @@
+{% extends 'base/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-TESTANDO
-</body>
-</html>
+
+{% block description %}Rafael's Knowledge page{% endblock description %}
+{% block title %}Knowledge{% endblock title %}
+{% block head-imports %}
+    <link rel="stylesheet" href="{% static 'css/custom-home.css' %}">
+{% endblock head-imports %}
+
+
+{% block body %}
+    <h1>Knowledge in development</h1>
+{% endblock body %}
